@@ -30,26 +30,22 @@
 			</plugin>
 
 
-			<!-- BEGINNING of Deploy to Cloudhub -->
-			<!-- mvn clean install deploy -Danypoint.us=mulu_ayele -Danypoint.pw=Nov@@2021@@ 
-				-Danypoint.env=Sandbox -->
-
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
-				<configuration>
-					<cloudHubDeployment>
-						<uri>https://anypoint.mulesoft.com</uri>
+				<extensions>true</extensions>
+				<configuration> 
+				<!-- BEGINNING of Deploy to Cloudhub -->
+					<cloudHubDeployment> 
 						<muleVersion>${app.runtime}</muleVersion>
-						<username>${anypoint.us}</username>
-						<password>${anypoint.pw}</password>
-						<applicationName>mulu-test-cicd</applicationName>
-						<environment>${anypoint.env}</environment>
-						<applicationName>case-spport-maven-deployment</applicationName>
-						<properties>
-							<key>value</key>
-						</properties>
+						<uri>https://anypoint.mulesoft.com</uri>
+						<environment>Sandbox</environment>
+						<applicationName>buddy</applicationName> 
+						 <objectStoreV2>true</objectStoreV2>
+						<server>AnypointSandbox</server>
+						<workers>1</workers>
+						<workerType>Micro</workerType>
 					</cloudHubDeployment>
 				</configuration>
 				<executions>
@@ -61,16 +57,8 @@
 						</goals>
 					</execution>
 				</executions>
-
+				<!-- End of Deploy to Cloudhub -->
 			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-deploy-plugin</artifactId>
-				<configuration>
-					<skip>true</skip>
-				</configuration>
-			</plugin>
-			<!-- End Deploy to Cloudhub -->
 
 		</plugins>
 
