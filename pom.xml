@@ -43,8 +43,8 @@
 						<environment>Sandbox</environment>
 						<applicationName>buddy</applicationName>
 						<objectStoreV2>true</objectStoreV2>
-						<username>${anypoint.username}</username>
-						<password>${anypoint.password}</password>
+						<username>Joseph_A</username>
+						<password>Nov$$2021$$</password>
 						<workers>1</workers>
 						<workerType>Micro</workerType>
 					</cloudHubDeployment>
