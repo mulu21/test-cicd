@@ -35,16 +35,16 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
-				<configuration> 
-				<!-- BEGINNING of Deploy to Cloudhub -->
-					<cloudHubDeployment> 
+				<configuration>
+					<!-- BEGINNING of Deploy to Cloudhub -->
+					<cloudHubDeployment>
 						<muleVersion>${app.runtime}</muleVersion>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<environment>Sandbox</environment>
-						<applicationName>buddy</applicationName> 
-						 <objectStoreV2>true</objectStoreV2>
-						<username>Joseph_A</username>
-						<password>Nov$$2021$$</password>
+						<applicationName>buddy</applicationName>
+						<objectStoreV2>true</objectStoreV2>
+						<username>${anypoint.username}</username>
+						<password>${anypoint.password}</password>
 						<workers>1</workers>
 						<workerType>Micro</workerType>
 					</cloudHubDeployment>
