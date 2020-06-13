@@ -19,4 +19,4 @@ steps:
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'clean install deploy -Danypoint.us=mulu_ayele -Danypoint.pw=Nov@@2021@@ -Danypoint.env=Sandbox'
+    goals: 'clean install deploy -Danypoint.us=joseph_A -Danypoint.pw=Nov$$2021$$ -Danypoint.env=Sandbox'
