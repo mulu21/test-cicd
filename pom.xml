@@ -30,7 +30,11 @@
 
 			<!-- BEGINNING of Deploy to Cloudhub -->
 			<!-- mvn clean install deploy -Danypoint.us=mulu_ayele -Danypoint.pw=Nov@@2021@@ -Danypoint.env=Sandbox --> 
+<<<<<<< HEAD
 		<!-- 	<plugin>
+=======
+	<!--		<plugin>
+>>>>>>> e158f10328395c31f9913df8c78ca2ff09626dc4
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
@@ -66,7 +70,7 @@
 			</plugin>  -->	 
 			<!-- End Deploy to Cloudhub -->
 
-		</plugins>
+		</plugins>  -->
 
 
 	</build>
