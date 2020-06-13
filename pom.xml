@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.mycompany</groupId>
@@ -8,14 +7,13 @@
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>mule-application</packaging>
 
-	<name>mulu-test-cicd</name>
+	<name>mulu-test-cicd-1</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
-		<app.runtime>4.2.2</app.runtime>
-		<mule.maven.plugin.version>3.2.7</mule.maven.plugin.version>
+ 
+		<mule.maven.plugin.version>3.3.5</mule.maven.plugin.version>
 	</properties>
 
 	<build>
@@ -32,7 +30,7 @@
 
 			<!-- BEGINNING of Deploy to Cloudhub -->
 			<!-- mvn clean install deploy -Danypoint.us=mulu_ayele -Danypoint.pw=Nov@@2021@@ -Danypoint.env=Sandbox --> 
-			<plugin>
+		<!-- 	<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
@@ -42,7 +40,7 @@
 						<muleVersion>${app.runtime}</muleVersion>
 						<username>${anypoint.us}</username>
 						<password>${anypoint.pw}</password>
-						<applicationName>mulu-test-cicd</applicationName>  <!-- CHANGE APPLICATOINNAME -->
+						<applicationName>mulu-test-cicd</applicationName>  CHANGE APPLICATOINNAME
 						<environment>${anypoint.env}</environment>
 						<properties>
 							<key>value</key>
@@ -65,7 +63,7 @@
 				<configuration>
 					<skip>true</skip>
 				</configuration>
-			</plugin> 	 
+			</plugin>  -->	 
 			<!-- End Deploy to Cloudhub -->
 
 		</plugins>
